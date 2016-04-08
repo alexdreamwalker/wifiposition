@@ -1,0 +1,82 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" android:weightSum="1">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        tools:context="com.example.itraq.wifiposition.WiFiMapsActivity"
+        android:layout_weight="0.78" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewLog" />
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="1">
+
+        <Button
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="clear "
+            android:id="@+id/buttonClear"
+            android:layout_weight="0.79" />
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextNumPoints"
+            android:text="10" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="1"
+        android:visibility="visible"
+        android:id="@+id/layoutButtons">
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="B1"
+            android:id="@+id/buttonUpdate1"
+            android:layout_weight="0.35" />
+
+        <Button
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="B2"
+            android:id="@+id/buttonUpdate2"
+            android:layout_weight="0.35" />
+
+        <Button
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="B3"
+            android:id="@+id/buttonUpdate3"
+            android:layout_weight="0.24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
